@@ -1,0 +1,43 @@
+<mvc:View 
+    controllerName="projetonetflix.controller.Inicio"
+    xmlns:mvc="sap.ui.core.mvc" 
+    displayBlock="true"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+    >
+    <Page id="page" title="{i18n>title}">
+
+        <subHeader>
+            <Toolbar id="_IDGenToolbar1" >
+                <Link id="_IDGenLink1" text="Inicio" press="onPressLinkInicio"/>
+                <Link id="_IDGenLink2" text="Series" press="onPressLinkSeries"/>
+                <ToolbarSpacer id="_IDGenToolbarSpacer1" />
+                <SearchField id="_IDGenSearchField1" width="30%">
+                
+                </SearchField>
+
+            </Toolbar>
+        </subHeader>
+
+        <content>
+            <layout:Grid id="_IDGenGrid1" >
+                <VBox id="_IDGenVBox1" class="preenchimentoBox">
+                    <Image id="_IDGenImage1" src="../img/fuller.png" width="100%" height="100%"></Image>
+                    <Text text="5 temporadas" class="corTextoBox"/>
+                    <Text text="A familia Tanner esta de volta aprontando todas" class="corTextoBox"/>
+                    <Text text="Sitcom" class="corTextoBox"/>
+                    <Text text="Comedia para toda a familia" class="corTextoBox"/>
+                </VBox>
+
+                <VBox class="preenchimentoBox">
+                    <Image src="../img/onepiece.jpg" width="100%" height="100%"></Image>
+                    <Text text="8 episodios" class="corTextoBox"/>
+                    <Text text="Um muleque que se acha pirata quer encontrar um tesouro escondido" class="corTextoBox"/>
+                    <Text text="Live Action" class="corTextoBox"/>
+                    <Text text="Anime" class="corTextoBox"/>
+                </VBox>
+            </layout:Grid>
+
+        </content>
+    </Page>
+</mvc:View>
