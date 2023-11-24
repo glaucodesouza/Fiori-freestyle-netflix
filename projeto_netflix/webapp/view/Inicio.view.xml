@@ -20,22 +20,19 @@
         </subHeader>
 
         <content>
-            <layout:Grid id="_IDGenGrid1" >
-                <VBox id="_IDGenVBox1" class="preenchimentoBox">
-                    <Image id="_IDGenImage1" src="../img/fuller.png" width="100%" height="100%"></Image>
-                    <Text text="5 temporadas" class="corTextoBox"/>
-                    <Text text="A familia Tanner esta de volta aprontando todas" class="corTextoBox"/>
-                    <Text text="Sitcom" class="corTextoBox"/>
-                    <Text text="Comedia para toda a familia" class="corTextoBox"/>
+            <layout:Grid id="_IDGenGrid1" content="{ArquivoNetflix>/titles}">
+
+                <VBox id="_IDGenVBox1" class="preenchimentoBox" width="300px" height="350px"> <!---->
+                    <Image id="_IDGenImage2" src="{ArquivoNetflix>jawSummary/logoImage/url}"        width="70%" height="70%"/>
+                    <Image id="_IDGenImage1" src="{ArquivoNetflix>jawSummary/backgroundImage/url}"  width="100%" height="100%"/>
+                    
+                    <Text id="_IDGenText1" class="corTextoBox rodapeTexto" text="{ArquivoNetflix>jawSummary/title}" />
+                    <Text id="_IDGenText5" class="corTextoBox rodapeTexto" text="{ArquivoNetflix>jawSummary/numSeasonsLabel}" />
+                    <Text id="_IDGenText2" class="corTextoBox rodapeTexto" text="{ArquivoNetflix>jawSummary/synopsis}" />
+                    <Text id="_IDGenText3" class="corTextoBox rodapeTexto" text="{ArquivoNetflix>jawSummary/genres/1/name}" />
+                    <Text id="_IDGenText4" class="corTextoBox rodapeTexto" text="{ArquivoNetflix>jawSummary/genres/2/name}" />
                 </VBox>
 
-                <VBox class="preenchimentoBox">
-                    <Image src="../img/onepiece.jpg" width="100%" height="100%"></Image>
-                    <Text text="8 episodios" class="corTextoBox"/>
-                    <Text text="Um muleque que se acha pirata quer encontrar um tesouro escondido" class="corTextoBox"/>
-                    <Text text="Live Action" class="corTextoBox"/>
-                    <Text text="Anime" class="corTextoBox"/>
-                </VBox>
             </layout:Grid>
 
         </content>
