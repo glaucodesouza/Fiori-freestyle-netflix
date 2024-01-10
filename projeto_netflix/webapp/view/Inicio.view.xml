@@ -8,7 +8,8 @@
     <Page id="page" title="{i18n>title}">
         <Text id="_IDGenText01" text='This is a Fiori App which simulates a Netflix Site.'></Text>
         <Text id="_IDGenText02" text='This consumes an API which gives a list of movies so we can list them on our App.'></Text>
-        <Text id="_IDGenText03" text='This was a class of Cristiano Santos, Fiorinet professor'></Text>
+        <Text id="_IDGenText03" text='To execute the API, click on Search Button.'></Text>
+        <Text id="_IDGenText04" text='This was a class of Cristiano Santos, Fiorinet professor'></Text>
         <subHeader>
             <Toolbar id="_IDGenToolbar1" >
                 <Link id="_IDGenLink1" text="{ModeloMenu>/primeiro}" press="onPressLinkInicio"/>
